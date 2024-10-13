@@ -1,0 +1,105 @@
+/* Home page */
+.Apresentacao-HP {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #010205;
+    border-bottom: solid 2px #fff;
+}
+
+.direita_textos {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container-Home-Page {
+    width: 80%;
+    margin-right: 200px;
+    height: 500px;
+}
+
+
+.Lista_Home {
+    width: 100%;
+    margin-left: 100px;
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.Lista_Home ul {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.Lista_Home li {
+    padding-bottom: 25px;
+}
+
+/* pra os simbolos */
+.Container-Simbolos {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    margin-left: 60px;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+
+/* botao de download */
+.Button-Download {
+    width: 50%;
+    margin-left: 75px;
+    border-radius: 10px;
+}
+
+
+.Button-Download-Name {
+    background-color: #18125e;
+    color: white;
+    text-align: center;
+    font-size: 37px;
+    text-decoration: none;
+    padding: 12px 90px;
+    border-radius: 2px;
+    border: solid 3px white;
+    width: 200px;
+    transition: all 0.25s ease-in-out;
+}
+
+.Button-Download-Name:hover {
+    background-color: rgb(8, 8, 34);
+    color: rgb(180, 180, 180);
+    border: solid 5px rgb(180, 180, 180);;
+}
+
+.foto_comeco 
+{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemBolinha {
+    width: 70%;
+    margin-right: 120px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 25%;
+    border: solid 1.5px #fff;
+}
+
+.imagemBolinha img {
+    width: 100%;
+    height: 100%;
+}

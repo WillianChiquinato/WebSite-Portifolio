@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* Para o Menu */
+.Menus nav a {
+    color: white;
+    padding-right: 130px;
+    text-decoration: none;
+    font-size: 28px;
+    position: relative;
+}
+
+.Menus nav a::after {
+    content: " ";
+    width: 0px;
+    height: 2px;
+    background-color: rgb(190, 190, 190);
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    transition: width 0.5s;
+}
+
+.Menus nav a:hover::after {
+    width: 75px;
+}
+
+.Container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu_De_Cima {
+    position: fixed;
+    background-color: rgb(44, 50, 92);
+    box-shadow: 0px 1px 0px white;
+    width: 100%;
+    padding: 5px;
+    border-bottom: solid 2px white;
+    z-index: 10;
+}
+
+.Logo {
+    margin-right: 80px;
+    width: 90%;
+}
+
+.Menus {
+    width: 100%;
+}
+
+/* Parallax */
+.Hidden {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(-80%);
+    transition: all 0.6s;
+}
+
+.Show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1.2s;
+}

@@ -1,0 +1,52 @@
+.Portifolio {
+    width: 100%;
+    background-color: #03060f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.Portifolio-Titulo {
+    color: #CCD6FF;
+    text-shadow: solid 1px #2f3c63;
+    font-size: 48px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.Container-Portifolio {
+    width: 100%;
+    background-color: #090b14;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px #fff;
+}
+
+.Container-Post {
+    width: 450px;
+    background-color: #121316;
+    border: solid 2px #fff;
+    border-radius: 6px;
+    margin: 40px 69px;
+}
+
+.Posts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.Posts span {
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.Posts img {
+    padding-bottom: 10px;
+}

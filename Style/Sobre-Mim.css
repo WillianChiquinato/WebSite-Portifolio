@@ -1,0 +1,70 @@
+.Sobre-Mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #010205;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: solid 2px #fff;
+}
+
+.Sobre-Mim-Titulo {
+    color: #CCD6FF;
+    text-shadow: solid 1px #2f3c63;
+    font-size: 48px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.Texto-Div {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.Texto-Div::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #010205);
+}
+
+#text {
+    text-align: justify;
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: 1.2px;
+}
+
+#toggle-button {
+    width: 100%;
+    border: none;
+    background-color: #010205;
+    color: black;
+    border-radius: 4px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.Sobre-Mim.active .Texto-Div {
+    height: 910px;
+}
+
+.Sobre-Mim.active .Texto-Div::before {
+    visibility: hidden;
+}
+
+.video-pitch {
+    width: 100%;
+    height: 600px;
+    padding: 50px, 0px;
+}
+
+iframe {
+    border-radius: 10px;
+}
