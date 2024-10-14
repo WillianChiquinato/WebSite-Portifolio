@@ -10,7 +10,7 @@
 }
 
 .Footer .Texto {
-   flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 .Titulo-Text {
@@ -39,7 +39,8 @@
     margin-bottom: 10px;
 }
 
-.Text-Email strong, .Text-Contact strong {
+.Text-Email strong,
+.Text-Contact strong {
     color: rgba(204, 214, 255, 1);
 }
 
