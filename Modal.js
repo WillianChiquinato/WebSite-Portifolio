@@ -36,7 +36,7 @@ const modaisData = {
     },
     modalChamar: {
         titulo: 'Contatos',
-        imagem: 'Imagens/Foto_will.jpeg',
+        imagem: 'Imagens/Icon_tell.png',
         corpo: 'Tell: (11)94864-1187',
         corpo2: 'E-mail: willianchiquinato@hotmail.com',
         corpo3: 'Espero que tenham gostado'
