@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="Style/Modal.css">
 
     <script src="Modal.js" defer></script>
+    <script src="Modal_Passe.js" defer></script>
     <script src="Parallax.js" defer></script>
 </head>
 
@@ -212,9 +213,41 @@
                 <button id="fechar-modal" class="button">Sair</button>
             </div>
             <div class="modal-conteudo">
-                <div class="modal-Image">
-                    <img id="modal-image" src="" alt="Imagem do Modal" width="450">
+                <div class="slider">
+                    <div class="modal-Image-slide">
+                        <input type="radio" name="raio-btn" id="radio1">
+                        <input type="radio" name="raio-btn" id="radio2">
+                        <input type="radio" name="raio-btn" id="radio3">
+
+                        <!-- As tres imagens -->
+                        <div class="slider-box-image primeiroSlide">
+                            <img id="modal-image1" src="" alt="Imagem do Modal">
+                        </div>
+
+                        <div class="slider-box-image">
+                            <img id="modal-image2" src="" alt="Imagem do Modal">
+                        </div>
+
+                        <div class="slider-box-image">
+                            <img id="modal-image3" src="" alt="Imagem do Modal">
+                        </div>
+
+                        <!-- navegação automatica -->
+                        <div class="navigationAuto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+
+                        <!-- navegação manual -->
+                        <div class="navigationManual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="modal-corpo">
                     <p id="modal-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, illo quisquam
                         minima veritatis, maiores laudantium ex commodi voluptatem eius id at beatae autem. Cum optio
