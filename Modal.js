@@ -48,6 +48,7 @@ const modaisData = {
         imagem3: 'Imagens/FundoPreto.jpg',
         corpo: 'Em breve'
     },
+    // Ver essa logica depois
     modalChamar: {
         titulo: 'Contatos',
         imagem: 'Imagens/Icon_tell.png',
