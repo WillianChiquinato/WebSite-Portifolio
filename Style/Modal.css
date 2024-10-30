@@ -176,6 +176,7 @@
 }
 
 .modal-corpo {
+    word-wrap: break-word;
     font-size: 20px;
     margin-bottom: 10px;
     text-align: justify;
