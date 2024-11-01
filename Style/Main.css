@@ -77,11 +77,10 @@
 .Button-Download-Name:hover {
     background-color: rgb(8, 8, 34);
     color: rgb(180, 180, 180);
-    border: solid 5px rgb(180, 180, 180);;
+    border: solid 5px rgb(180, 180, 180);
 }
 
-.foto_comeco 
-{
+.foto_comeco {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -102,4 +101,67 @@
 .imagemBolinha img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .foto_comeco {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Lista_Home {
+        margin-left: 100px;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .Lista_Home ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .Apresentacao-HP {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .direita_textos {
+        width: 100%;
+    }
+
+    .Container-Simbolos {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding-left: 20%;
+    }
+
+    .foto_comeco {
+        width: 100%;
+        padding-left: 20%;
+    }
+
+    .foto_comeco img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Button-Download {
+        padding-left: 25%;
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 10px;
+    }
+
+    .Lista_Home {
+        font-size: 18px;
+    }
+
+    .Lista_Home ul {
+        width: 100%;
+    }
 }

@@ -1,7 +1,7 @@
 const modaisData = {
     modal1: {
         titulo: 'Catastroph 2022',
-        imagem: 'Imagens/WhatsApp Image 2024-10-31 at 01.03.18.jpeg',
+        imagem: 'Imagens/Cat_oficial.png',
         imagem2: 'Imagens/Catastroph-1.jpeg',
         imagem3: 'Imagens/Catastroph-2.jpeg',
         corpo: '"Catastroph", Um jogo 2d no estilo metroidvania, baseado em Hollow Knight, BloodBorne e Elden Ring. O jogo foi criado com um propósito de conscientizar e divertir o consumidor a partir de uma história baseado em romance epistolar e Souls Like, a narrativa do jogo narra a história de Luara em uma cidade de pescadores que adoram a Lua como uma deusa, a cidade passa por momentos difíceis desde o desaparecimento do sol e da lua nos céus, como consequência do uso indevido da magia proporcionada pelos dois astros. O jogador controlará o gato Astroph, um determinado herói que busca encontrar a sua amiga Beth, para isso o jogador passará por diversos desafios dentro da cidade de Luara. Por conta do desaparecimento do Astro Rei e do Satélite da Terra, a pesca, atividade chave na economia e sustento de Luara, os pescadores locais usaram de uma magia proibida para atrair os peixes, mas essa magia acaba tendo um efeito colateral que transformava as pessoas que consumiam os peixes em animais marinhos aos poucos, criando assim aberrações de humanos amalgamados com peixes, águas-vivas, lagostas etc. A infecção também se alastrou para outros tipos de formas de vidas além dos humanos, os peixes infectados foram consumidos por outros peixes maiores e até mesmo por gaivotas, contaminado assim todo o eco sistema.'
@@ -9,7 +9,7 @@ const modaisData = {
     modal2: {
         titulo: 'Lility Search Truth',
         imagem: 'Imagens/Lility.png',
-        imagem2: 'Imagens/Lility-2.jpeg',
+        imagem2: 'Imagens/Lility-Captura.png',
         imagem3: 'Imagens/Lility-3.jpeg',
         corpo: 'Este é o jogo chamado Lility: Keys of Power, um jogo side scrolling 2D metroidvania com investigação em desenvolvimento, Lility é uma criança de 15 anos e esta atrás de seu querido pai robert, que foi raptado pela mão do governo e setenciado a morte logo após, por descobrir "Segredos de estado" que nunca deveriam ser revelados, não sabendo do ocorrido, lility embarca em uma aventura nas cidades inferiores atrás dessas informações, enfrentando desafios terriveis nas cidades e fugindo da guarda real..., para saber mais clique no link https://willianchiquinato.github.io/Lility_Search_Truth/, esse é o site oficial do jogo para quem quiser saber mais, espero que gostem :)'
     },

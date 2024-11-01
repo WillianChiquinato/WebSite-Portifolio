@@ -68,3 +68,65 @@
 iframe {
     border-radius: 10px;
 }
+
+@media screen and (max-width: 1440px) {
+    .Sobre-Mim {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .Sobre-Mim.active .Texto-Div {
+        height: 1100px;
+    }
+
+    .Sobre-Mim-Titulo {
+        font-size: 43px;
+        padding-top: 70px;
+        padding-bottom: 53px;
+    }
+
+    .Texto-Div {
+        height: 200px;
+        overflow: hidden;
+        transition: height 0.5s ease;
+    }
+
+    #text {
+        font-size: 19px;
+    }
+
+    .video-pitch {
+        height: 500px;
+    }
+
+    iframe {
+        border-radius: 10px;
+        width: 100%;
+        height: 453px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .Sobre-Mim.active .Texto-Div {
+        height: 1780px;
+    }
+
+    .Sobre-Mim-Titulo {
+        font-size: 41px;
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+
+    #text {
+        font-size: 17px;
+    }
+
+    .video-pitch {
+        height: 250px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 218px;
+    }
+}

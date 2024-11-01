@@ -50,3 +50,47 @@
 .Posts img {
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 1440px) {
+    .Container-Post {
+        width: 400px;
+        margin: 40px 20px;
+    }
+
+    .Mobile-Width-cat {
+        width: 224px;
+    }
+
+    .Mobile-Width {
+        width: 350px;
+    }
+
+    .Sobre-Mim-Titulo {
+        font-size: 43px;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .Container-Portifolio {
+        justify-content: center;
+    }
+
+    .Container-Post {
+        width: 400px;
+        margin: 40px 20px;
+    }
+
+    .Mobile-Width-cat {
+        width: 224px;
+    }
+
+    .Mobile-Width {
+        width: 285px;
+    }
+
+    .Portifolio-Titulo {
+        font-size: 41px;
+        padding-top: 65px;
+    }
+}
