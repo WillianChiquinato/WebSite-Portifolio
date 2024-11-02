@@ -72,6 +72,11 @@
 }
 
 @media screen and (max-width: 1020px) {
+    .Portifolio {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .Container-Portifolio {
         justify-content: center;
     }
@@ -82,11 +87,11 @@
     }
 
     .Mobile-Width-cat {
-        width: 224px;
+        width: 270px;
     }
 
     .Mobile-Width {
-        width: 285px;
+        width: 270px;
     }
 
     .Portifolio-Titulo {
