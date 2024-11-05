@@ -73,3 +73,19 @@
     color: #ffffff;
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 1020px) {
+    .Footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Text-Contact,
+    .Text-Email {
+        font-size: 17px;
+    }
+
+    .Botao-Fundo {
+        display: none;
+    }
+}
