@@ -7,7 +7,7 @@ const modaisData = {
         corpo: '"Catastroph", Um jogo 2d no estilo metroidvania, baseado em Hollow Knight, BloodBorne e Elden Ring. O jogo foi criado com um propósito de conscientizar e divertir o consumidor a partir de uma história baseado em romance epistolar e Souls Like, a narrativa do jogo narra a história de Luara em uma cidade de pescadores que adoram a Lua como uma deusa, a cidade passa por momentos difíceis desde o desaparecimento do sol e da lua nos céus, como consequência do uso indevido da magia proporcionada pelos dois astros. O jogador controlará o gato Astroph, um determinado herói que busca encontrar a sua amiga Beth, para isso o jogador passará por diversos desafios dentro da cidade de Luara. Por conta do desaparecimento do Astro Rei e do Satélite da Terra, a pesca, atividade chave na economia e sustento de Luara, os pescadores locais usaram de uma magia proibida para atrair os peixes, mas essa magia acaba tendo um efeito colateral que transformava as pessoas que consumiam os peixes em animais marinhos aos poucos, criando assim aberrações de humanos amalgamados com peixes, águas-vivas, lagostas etc. A infecção também se alastrou para outros tipos de formas de vidas além dos humanos, os peixes infectados foram consumidos por outros peixes maiores e até mesmo por gaivotas, contaminado assim todo o eco sistema.'
     },
     modal2: {
-        titulo: 'Lility Search Truth',
+        titulo: 'Lility: Keys of Power',
         imagem: 'Imagens/Lility.png',
         imagem2: 'Imagens/Lility-Captura.png',
         imagem3: 'Imagens/Lility-3.jpeg',
@@ -48,16 +48,6 @@ const modaisData = {
         imagem3: 'Imagens/FundoPreto.jpg',
         corpo: 'Em breve'
     },
-    // Ver essa logica depois
-    modalChamar: {
-        titulo: 'Contatos',
-        imagem: 'Imagens/Icon_tell.png',
-        imagem2: 'Imagens/Icon_tell.png',
-        imagem3: 'Imagens/Icon_tell.png',
-        corpo: 'Tell: (11)94864-1187',
-        corpo2: 'E-mail: willianchiquinato@hotmail.com',
-        corpo3: 'Espero que tenham gostado'
-    },
 };
 
 const fade = document.getElementById("fade");
@@ -94,18 +84,6 @@ const toggleModal = () => {
 
 // Adiciona eventos a todos os botões de abrir modal
 document.querySelectorAll(".open-modal").forEach(button => {
-    button.addEventListener("click", () => {
-        openModal(button.getAttribute("data-modal"));
-    });
-});
-
-document.querySelectorAll(".Botao-Chamar").forEach(button => {
-    button.addEventListener("click", () => {
-        openModal(button.getAttribute("data-modal"));
-    });
-});
-
-document.querySelectorAll(".modal-contact").forEach(button => {
     button.addEventListener("click", () => {
         openModal(button.getAttribute("data-modal"));
     });
