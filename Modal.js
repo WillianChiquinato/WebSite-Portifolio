@@ -35,13 +35,20 @@ const modaisData = {
         corpo: 'Foi desenvolvido a interface do Spotify, um software streamer de músicas, analizada a situação, construí uma versão do front-end em HTML5, CSS3 e Javascript...'
     },
     modal6: {
+        titulo: 'Eneris Planet',
+        imagem: 'Imagens/Eneris Planet - menu.jpeg',
+        imagem2: 'Imagens/Eneris Tripulante.jpeg',
+        imagem3: 'Imagens/Eneris Death.jpeg',
+        corpo: 'Diante de um desafio da FIAP - Global Solution, para energia sustentável, desenvolvemos o ENERIS PLANET, um jogo 2D side scrolling que conscientiza e explica indiretamente sobre a energia geotérmica, desenvolvido 1 fase inteira com um tempo estimado de 10 dias até o final do desafio... Em um planeta vizinho de Saturno, Eneris é um planeta cujo sua principal mão de obra e dificuldade é a  energia, o planeta inteiro é feito para a energia e seu núcleo, a matriz do planeta é reabastecida manualmente pela população e empregados nas empresas de energia geotermicas. Com isso temos o Zadek, um homem de 25 anos, recém saído da fase de estudos, foi aprovado na PSN (Projetos de soluções nucleotecnicas) e terá o dia a dia demonstrado no jogo, Eneris terá desafios, inimigos feito de carbono e líquido amarelo escuro que sujam o ambiente aonde passam e não deixam Zadek trabalhar, chamados de Rek"Tech, Zadek terá que fazer a manutenção do maquinário TVB (Totens de Vapor binário) contendo o liquido "Novair" com ponto de ebulição para acionar a turbinas geotermicas em pontos específicos no mapa, os totens se sobrecarregam quando não faz a manutenção ou não consegue por conta os Rek"Techs, seu objetivo em cada mapa é deixar o Nucleo "Novan" do planeta Eneris ativado, pois ele se esfria a cada momento que não tem retorno de energia, conseguindo ativar todos os totens ao mesmo tempo, os inimigos serão destruidos e Zadek terá seu dia feito.'
+    },
+    modal7: {
         titulo: 'Diario de Martin',
         imagem: 'Imagens/FundoPreto.jpg',
         imagem2: 'Imagens/FundoPreto.jpg',
         imagem3: 'Imagens/FundoPreto.jpg',
         corpo: 'Em breve'
     },
-    modal7: {
+    modal8: {
         titulo: 'Claws Barbers',
         imagem: 'Imagens/FundoPreto.jpg',
         imagem2: 'Imagens/FundoPreto.jpg',
