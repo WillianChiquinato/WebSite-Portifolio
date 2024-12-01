@@ -101,4 +101,20 @@
         padding-right: 40px;
     }
 
+    .Skills-Titulo {
+        font-size: 41px;
+    }
+
+    .TituloHard {
+        font-size: 35px;
+    }
+
+    .ItemHard {
+        font-size: 20px;
+    }
+
+    .SubLista {
+        font-size: 14px;
+    }
+
 }
