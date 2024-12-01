@@ -3,7 +3,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgb(44, 50, 92);
+    background: rgb(16, 19, 43);
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
 }
 
 .Titulo-Text {
-    color: #ffffff;
+    color: var(--color-branca);
     width: 1200px;
     text-align: center;
     text-transform: uppercase;
@@ -34,7 +34,7 @@
 }
 
 .Text-Email {
-    color: #ffffff;
+    color: var(--color-branca);
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -45,7 +45,7 @@
 }
 
 .Text-Contact {
-    color: #ffffff;
+    color: var(--color-branca);
     font-size: 20px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .Botao-Chamar {
-    background-color: #ffffff;
+    background-color: var(--color-branca);
     color: #000000;
     font-size: 23px;
     font-weight: bold;
@@ -70,22 +70,12 @@
 
 .Botao-Chamar:hover {
     background-color: #000000;
-    color: #ffffff;
+    color: var(--color-branca);
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1440px) {
     .Footer {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .Text-Contact,
-    .Text-Email {
-        font-size: 17px;
-    }
-
-    .Botao-Fundo {
         display: none;
     }
 }

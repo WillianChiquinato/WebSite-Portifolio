@@ -6,7 +6,7 @@
     text-align: center;
     padding-left: 15%;
     padding-right: 15%;
-    border-bottom: solid 2px #fff;
+    border-bottom: solid 2px var(--color-branca);
 }
 
 .Sobre-Mim-Titulo {
@@ -36,7 +36,7 @@
 
 #text {
     text-align: justify;
-    color: #fff;
+    color: var(--color-branca);
     font-size: 23px;
     letter-spacing: 1.2px;
 }
@@ -108,7 +108,7 @@ iframe {
 
 @media screen and (max-width: 1020px) {
     .Sobre-Mim.active .Texto-Div {
-        height: 2450px;
+        height: 2100px;
     }
 
     .Sobre-Mim-Titulo {

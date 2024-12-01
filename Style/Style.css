@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --color-branca: rgb(235, 224, 208);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +19,7 @@ html {
 
 /* Para o Menu */
 .Menus nav a {
-    color: white;
+    color: var(--color-branca);
     padding-right: 130px;
     text-decoration: none;
     font-size: 28px;
@@ -41,26 +45,28 @@ html {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .Menu_De_Cima {
     position: fixed;
-    background-color: rgb(44, 50, 92);
+    background-color: rgb(20, 24, 49);
     box-shadow: 0px 1px 0px white;
     width: 100%;
     padding: 5px;
-    border-bottom: solid 2px white;
+    border-bottom: solid 2px var(--color-branca);
     z-index: 10;
 }
 
 .Logo {
     margin-right: 80px;
-    width: 90%;
+    width: 30%;
 }
 
 .Menus {
-    width: 100%;
+    display: flex;
+    justify-content: end;
+    width: 70%;
 }
 
 
@@ -84,7 +90,8 @@ html {
 .button-espaco {
     /* width: 150px; */
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 20px;
 }
 
 .Menu-Mobile {
@@ -101,7 +108,7 @@ html {
 }
 
 .Menu-Mobile nav a {
-    color: blanchedalmond;
+    color: var(--color-branca);
     text-decoration: none;
     display: block;
     padding: 20px 30px;
@@ -114,10 +121,10 @@ html {
 }
 
 #Btn-Menu {
+    all: unset;
     background: transparent;
     width: 50px;
     height: 50px;
-    border: 3px solid rgb(224, 211, 193);
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -125,30 +132,24 @@ html {
 
 .Linha {
     position: relative;
-    height: 3px;
-    background: rgb(224, 211, 193);
-    width: 25px;
+    height: 4px;
+    background: var(--color-branca);
+    width: 35px;
     display: block;
-    margin: 5px auto;
+    margin: 7px auto;
     transform-origin: center;
     transition: .3s;
 }
 
-#Btn-Menu.Ativar-Menu-Mobile {
-    border: 3px solid rgb(224, 211, 193);
-    background-color: rgb(2, 2, 19);
-    box-shadow: 1px 1px 2px 2px;
-}
-
 /* chamando o js no botao, DEG significa Graus */
 #Btn-Menu.Ativar-Menu-Mobile .Linha:nth-child(1) {
-    transform: translateY(8px) rotate(-45deg);
-    background-color: rgb(224, 211, 193);
+    transform: translateY(11px) rotate(-45deg);
+    background-color: var(--color-branca);
 }
 
 #Btn-Menu.Ativar-Menu-Mobile .Linha:nth-child(3) {
-    transform: translateY(-8px) rotate(45deg);
-    background-color: rgb(224, 211, 193);
+    transform: translateY(-11px) rotate(45deg);
+    background-color: var(--color-branca);
 }
 
 #Btn-Menu.Ativar-Menu-Mobile .Linha:nth-child(2) {
