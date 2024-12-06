@@ -1,0 +1,101 @@
+.Portifolio {
+    width: 100%;
+    background-color: #03060f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: solid 2px var(--color-branca);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.Portifolio-Titulo {
+    color: #CCD6FF;
+    text-shadow: solid 1px #2f3c63;
+    font-size: 48px;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.Container-Portifolio {
+    width: 100%;
+    background-color: #090b14;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px var(--color-branca);
+}
+
+.Container-Post {
+    width: 450px;
+    background-color: #121316;
+    border: solid 2px var(--color-branca);
+    border-radius: 6px;
+    margin: 40px 69px;
+}
+
+.Posts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.Posts span {
+    color: var(--color-branca);
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.Posts img {
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .Container-Post {
+        width: 400px;
+        margin: 40px 20px;
+    }
+
+    .Mobile-Width-cat {
+        width: 224px;
+    }
+
+    .Mobile-Width {
+        width: 350px;
+    }
+
+    .Sobre-Mim-Titulo {
+        font-size: 43px;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .Portifolio {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .Container-Portifolio {
+        justify-content: center;
+    }
+
+    .Container-Post {
+        width: 400px;
+        margin: 40px 20px;
+    }
+
+    .Mobile-Width-cat {
+        width: 260px;
+    }
+
+    .Mobile-Width {
+        width: 260px;
+    }
+
+    .Portifolio-Titulo {
+        font-size: 41px;
+        padding-top: 65px;
+    }
+}

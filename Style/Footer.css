@@ -1,0 +1,81 @@
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(16, 19, 43);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .Texto {
+    flex-shrink: 0;
+}
+
+.Titulo-Text {
+    color: var(--color-branca);
+    width: 1200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12x;
+    margin-bottom: 5px;
+    padding-left: 60%;
+}
+
+.Subtitulo-Text {
+    color: #000000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    padding-left: 60%;
+}
+
+.Text-Email {
+    color: var(--color-branca);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Text-Email strong,
+.Text-Contact strong {
+    color: rgba(204, 214, 255, 1);
+}
+
+.Text-Contact {
+    color: var(--color-branca);
+    font-size: 20px;
+}
+
+.Botao-Fundo {
+    margin-top: 10px;
+}
+
+.Botao-Chamar {
+    background-color: var(--color-branca);
+    color: #000000;
+    font-size: 23px;
+    font-weight: bold;
+    /* top right Botton left */
+    padding: 12px 50px;
+    margin: 20px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.Botao-Chamar:hover {
+    background-color: #000000;
+    color: var(--color-branca);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1440px) {
+    .Footer {
+        display: none;
+    }
+}

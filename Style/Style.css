@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --color-branca: rgb(235, 224, 208);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* Para o Menu */
+.Menus nav a {
+    color: var(--color-branca);
+    padding-right: 130px;
+    text-decoration: none;
+    font-size: 28px;
+    position: relative;
+}
+
+.Menus nav a::after {
+    content: " ";
+    width: 0px;
+    height: 2px;
+    background-color: rgb(190, 190, 190);
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    transition: width 0.5s;
+}
+
+.Menus nav a:hover::after {
+    width: 75px;
+}
+
+.Container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Menu_De_Cima {
+    position: fixed;
+    background-color: rgb(20, 24, 49);
+    box-shadow: 0px 1px 0px white;
+    width: 100%;
+    padding: 5px;
+    border-bottom: solid 2px var(--color-branca);
+    z-index: 10;
+}
+
+.Logo {
+    margin-right: 80px;
+    width: 30%;
+}
+
+.Menus {
+    display: flex;
+    justify-content: end;
+    width: 70%;
+}
+
+
+/* Parallax */
+.Hidden {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(-80%);
+    transition: all 0.6s;
+}
+
+.Show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1.2s;
+}
+
+
+/* Estilização Menu MOBILE */
+.button-espaco {
+    /* width: 150px; */
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.Menu-Mobile {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 75px;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.Menu-Mobile nav a {
+    color: var(--color-branca);
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 27px;
+    transition: .5s;
+}
+
+.Menu-Mobile nav a:hover {
+    background-color: rgb(10, 10, 10);
+}
+
+#Btn-Menu {
+    all: unset;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.Linha {
+    position: relative;
+    height: 4px;
+    background: var(--color-branca);
+    width: 35px;
+    display: block;
+    margin: 7px auto;
+    transform-origin: center;
+    transition: .3s;
+}
+
+/* chamando o js no botao, DEG significa Graus */
+#Btn-Menu.Ativar-Menu-Mobile .Linha:nth-child(1) {
+    transform: translateY(11px) rotate(-45deg);
+    background-color: var(--color-branca);
+}
+
+#Btn-Menu.Ativar-Menu-Mobile .Linha:nth-child(3) {
+    transform: translateY(-11px) rotate(45deg);
+    background-color: var(--color-branca);
+}
+
+#Btn-Menu.Ativar-Menu-Mobile .Linha:nth-child(2) {
+    width: 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .Menus {
+        display: none;
+    }
+
+    .Menu-Mobile.abrir {
+        visibility: visible;
+        overflow-y: 10;
+        height: calc(100vh - 75px);
+    }
+
+    #Btn-Menu {
+        display: block;
+    }
+
+    .button-espaco {
+        width: 150px;
+    }
+}

@@ -1,0 +1,205 @@
+/* Parte do modal */
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.button {
+    background-color: #888;
+    padding: 10px 20px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background-color: #c7c7c7;
+    color: rgb(25, 26, 27);
+}
+
+.open-modal {
+    background-color: #191a1f;
+    padding: 10px 70px;
+    color: rgb(0, 88, 202);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 22px;
+    transition: 0.4s;
+}
+
+.open-modal:hover {
+    background-color: #020202;
+    color: rgb(167, 167, 167);
+    opacity: 1;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 11;
+}
+
+#modal {
+    background-color: antiquewhite;
+    width: 600px;
+    height: 600px;
+    max-width: 90%;
+    max-height: 90%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 20px;
+    border: solid 2px #9b9999;
+    border-radius: 5px;
+    z-index: 12;
+}
+
+.modal-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.modal-conteudo {
+    width: 100%;
+    height: 88%;
+    overflow-y: auto;
+}
+
+.modal-conteudo::-webkit-scrollbar {
+    display: none;
+}
+
+/* Css do slide carrossel */
+.slider {
+    /* ele centraliza */
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    /* ele bloqueia qualquer formatação em outro lugar tipo mobile e etc */
+    padding: 0 !important;
+    border-bottom: solid 1px #ccc;
+    overflow: hidden;
+}
+
+.modal-Image-slide {
+    display: flex;
+    width: 400%;
+    height: auto;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.modal-Image-slide input {
+    display: none;
+}
+
+.slider-box-image {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1.5s;
+}
+
+.slider-box-image img {
+    width: 90%;
+}
+
+.navigationManual,
+.navigationAuto {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    bottom: 13px;
+    padding-top: 20px;
+}
+
+.navigationManual .manual-btn,
+.navigationAuto div {
+    border: 2px solid #191a1f;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Todos com o filtro menos o ultimo "Filho" */
+.navigationManual .manual-btn:not(:last-child),
+.navigationAuto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.navigationManual .manual-btn:hover {
+    background-color: #191a1f;
+}
+
+#radio1:checked~.navigationAuto .auto-btn1 {
+    background-color: #191a1f;
+}
+
+#radio1:checked~.primeiroSlide {
+    margin-left: 0%;
+}
+
+#radio2:checked~.navigationAuto .auto-btn2 {
+    background-color: #191a1f;
+}
+
+#radio2:checked~.primeiroSlide {
+    margin-left: -25%;
+}
+
+#radio3:checked~.navigationAuto .auto-btn3 {
+    background-color: #191a1f;
+}
+
+#radio3:checked~.primeiroSlide {
+    margin-left: -50%;
+}
+
+.modal-corpo {
+    word-wrap: break-word;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 10px 25px 0 25px;
+}
+
+.modal-corpo::before {
+    content: '';
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(transparent, antiquewhite);
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
